@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>운영 | AnyRPG</title>
+<link rel="stylesheet" href="/assets/style.css">
+<script type="module" src="/assets/ops.js"></script>
+</head>
+<body class="ops">
+<header class="ops-head">
+<div class="ops-brand"><a href="/" class="logo">AnyRPG</a><span>게임 운영</span></div>
+<div class="ops-util"><span id="ops-maint" hidden></span><span id="ops-who"></span><button type="button" class="btn" id="ops-logout">로그아웃</button></div>
+</header>
+<div class="ops-body">
+<nav class="ops-nav" aria-label="운영 메뉴">
+<a href="/" data-section="dashboard">대시보드</a>
+<a href="/users" data-section="users">유저 · 제재</a>
+<a href="/grants" data-section="grants">지급 · 회수</a>
+<a href="/notices" data-section="notices">공지</a>
+<a href="/maintenance" data-section="maintenance">점검</a>
+<a href="/logs" data-section="logs">기록</a>
+</nav>
+<main class="ops-main" id="ops-main" aria-busy="true"></main>
+</div>
+</body>
+</html>
