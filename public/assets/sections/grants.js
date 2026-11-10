@@ -4,7 +4,7 @@ import { $, api, busy, chip, confirmModal, dt, esc, modal, query, toast } from '
 const MAIL = { SENT: ['안 받음', 'info'], TAKEN: ['받음', 'ok'], RECALLED: ['회수', 'off'], PARTLY_RECALLED: ['일부 회수', 'warn'], DELETED_BY_PLAYER: ['받기 전 삭제', 'off'] };
 const SIZE = 20;
 
-const itemsText = (g) => [...(g.items ?? []).map((i) => `${i.itemName} x${i.quantity}`), ...(g.currencyAmount > 0 ? [`재화 ${g.currencyAmount.toLocaleString('ko-KR')}`] : [])].join(', ');
+const itemsText = (g) => [...(g.items ?? []).map((i) => `${i.itemName} x${i.quantity}`), ...(g.currencyAmount > 0 ? [`골드 ${g.currencyAmount.toLocaleString('ko-KR')}`] : [])].join(', ');
 
 export async function render(main) {
   const picked = new Map();
@@ -22,7 +22,7 @@ export async function render(main) {
           <div id="grant-items"></div>
           <div><button type="button" class="btn" id="grant-add-item">아이템 줄 더하기</button></div>
           <datalist id="grant-known"></datalist>
-          <label for="grant-currency">재화</label><input type="number" id="grant-currency" min="0" max="1000000" value="0"></div>
+          <label for="grant-currency">골드</label><input type="number" id="grant-currency" min="0" max="1000000" value="0"></div>
       </div>
       <div class="ops-two">
         <div class="form-row"><label for="grant-subject">우편 제목 (1~50자)</label><input type="text" id="grant-subject" maxlength="50" placeholder="예 점검 보상"></div>
