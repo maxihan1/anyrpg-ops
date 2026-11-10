@@ -1,8 +1,8 @@
-# AnyRPG 게임 운영툴
+# Boss Room 게임 운영툴
 
-[AnyMMO](https://github.com/AnyRPG) 데모 게임 「A Lost Soul」을 운영하는 웹 운영툴입니다. 화면은 데모마켓 운영툴과 같은 짜임(머리줄 · 왼쪽 메뉴 · 표에서 바로 처리)입니다.
+시연 게임 「Boss Room」(Unity Boss Room 포크 `maxihan1/boss-room`)을 운영하는 웹 운영툴입니다. 화면은 데모마켓 운영툴과 같은 짜임(머리줄 · 왼쪽 메뉴 · 표에서 바로 처리)입니다.
 
-- 주소: https://anyrpg-ops.maxihan.com
+- 주소: https://bossroom-ops.maxihan.com (옛 주소 anyrpg-ops.maxihan.com 도 당분간 같이 연다)
 - 게임 API 서버: [maxihan1/anymmo-webserver](https://github.com/maxihan1/anymmo-webserver) `ops-api` 브랜치의 운영자 API(`/opsapi`)를 부릅니다
 
 ## 메뉴
