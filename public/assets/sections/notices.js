@@ -43,7 +43,7 @@ export async function render(main) {
 
   async function edit(n) {
     const input = await modal({
-      title: n ? `공지 #${n.id} 고치기` : '새 공지', className: 'wide', body: form(n),
+      title: n ? `공지 #${n.id} 고치기` : '새 공지', className: 'wide', body: form(n ?? {}),
       buttons: [{ label: '닫기', value: null }, { label: '저장', primary: true, value: read }],
     });
     if (!input) return;
